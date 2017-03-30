@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+		<form method='POST' id='post_form' action="">
+#CHART_PARAMS#
+		</form>
+		<script type="text/javascript">
+		// Send the POST when the page is loaded,
+   		// which will replace the iframe with the retrieved chart.
+		function loadGraph() {
+      			var frm = document.getElementById('post_form');
+			frm.action = 'http://chart.apis.google.com/chart?chid=' + (new Date()).getMilliseconds();
+      			if (frm) {
+       				frm.submit();
+      			}
+    		}
+		loadGraph();
+  		</script>
+	</body>
+</html>
+

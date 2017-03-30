@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>#PAGE_TITLE#</title>
+		<link href="#PAGE_DATA_PATH#/general_page_style.css" rel="stylesheet">
+		<link href="#PAGE_DATA_PATH#/page_style.css" rel="stylesheet">
+	</head>
+	<body>
+		<img src="#PAGE_DATA_PATH#/page_logo.gif" border="0" height="59" hspace="12" vspace="5" width="200">
+		<h1>#PAGE_TITLE#</h1>
+		<hr size="1" width="95%" align="left" />		
+		<h2>Summary</h2>
+		<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+			<tr valign="top">
+				<th>#Samples</th>
+				<th>Average Time</th>
+				<th>Min Time</th>
+				<th>Max Time</th>
+				<th>Standard Dev.</th>
+				<th>Failure Rate</th>
+				<th>Throughput</th>
+				<th>KB/sec</th>
+			</tr>
+			<!-- SUMMARY TABLE DATA -->
+#SUMMARY_RESULTS_TABLE#
+		</table>
+		<table class="legend" border="0" cellpadding="5" cellspacing="2">
+			<tr valign="top">
+				<th>tpm = transactions per minute</th>
+			</tr>
+		</table>
+		<table width="100%">
+			<tbody>
+			<!-- SUMMARY GRAPHS -->
+#SUMMARY_GRAPHS#
+			</tbody>
+		</table>	
+		<hr size="1" width="95%" align="left" />		
+		<h2>Pages</h2>
+		<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+			<tr valign="top">
+				<th>URL</th>
+				<th>#Samples</th>
+				<th>Average Time</th>
+				<th>Min Time</th>
+				<th>Max Time</th>
+				<th>Standard Dev.</th>
+				<th>Failure Rate</th>
+				<th>Throughput</th>
+				<th>KB/sec</th>
+			</tr>
+			<!-- PAGE DETAILED TABLE DATA -->
+#PAGE_DETAILED_RESULTS_TABLE#
+		</table>
+		<table width="100%">
+			<tbody>
+			<!-- DETAILED GRAPHS -->
+#DETAILED_GRAPHS#
+			</tbody>
+		</table>	
+	</body>
+</html>
